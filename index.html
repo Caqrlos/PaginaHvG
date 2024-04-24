@@ -59,9 +59,10 @@
             background-color: transparent; /* Fondo transparente */
             margin: auto;
             padding: 20px;
-            width: 50%; /* Cambiado a 50% para que la ventana emergente sea más pequeña */
+            width: 60%; /* Cambiado a 50% para que la ventana emergente sea más pequeña */
             text-align: center;
             position: relative; /* Para que podamos detectar clics fuera de la ventana emergente */
+            color: white; /* Color del texto */
         }
         .modal-img {
             max-width: 100%; /* Para que la imagen se ajuste al ancho del contenedor */
@@ -72,7 +73,7 @@
 </head>
 <body onload="showModal()">
     <div class="header">
-        <h1>Bienvenidos a la página de nuestra Institución Educativa</h1>
+        <h1>I.E.D Humberto Velasquez Garcia</h1>
         <div class="social">
             <a href="https://www.facebook.com/iedhumberto.velasquezgarcia"><img src="fb_icon_325x325.png" alt="Facebook" style="width: 20px; height: 20px;"></a> <!-- Ajustado el tamaño del icono de Facebook -->
             <a href="https://twitter.com/tuUsuario"><img src="twitter_icon.png" alt="Twitter"></a>
@@ -81,17 +82,18 @@
     </div>
     <div class="nav">
         <a href="acerca.html">Acerca de Nosotros</a> |
-        <a href="cursos">Nuestros Cursos</a> |
+        <a href="cursos.html">Nuestros Cursos</a> |
         <a href="contacto.html">Contacto</a>
     </div>
-    <!-- Ventana emergente -->
-    <div id="welcomeModal" class="modal" onclick="hideModal(event)">
-        <div class="modal-content">
-            <h2>Bienvenidos</h2>
-            <p>¡Estamos emocionados de tenerte aquí!</p>
-            <img src="binvenidohvg_n.jpg" alt="Bienvenidos" class="modal-img">
-        </div>
+<!-- Ventana emergente -->
+<div id="welcomeModal" class="modal" onclick="hideModal(event)">
+    <div class="modal-content">
+        <img src="binvenidohvg_n.jpg" alt="Bienvenidos" class="modal-img">
     </div>
+</div>
+
+    </div>
+</div>
     <script>
         function showModal() {
             document.getElementById('welcomeModal').style.display = "block";
@@ -106,6 +108,5 @@
     </script>
 </body>
 </html>
-
 
 
