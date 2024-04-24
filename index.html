@@ -59,14 +59,14 @@
             background-color: transparent; /* Fondo transparente */
             margin: auto;
             padding: 20px;
-            width: 60%; /* Cambiado a 50% para que la ventana emergente sea más pequeña */
+            width: 80%; /* Ancho de la ventana emergente */
             text-align: center;
             position: relative; /* Para que podamos detectar clics fuera de la ventana emergente */
             color: white; /* Color del texto */
         }
         .modal-img {
             max-width: 100%; /* Para que la imagen se ajuste al ancho del contenedor */
-            max-height: 70vh; /* Establece la altura máxima de la imagen como el 70% de la altura visible de la ventana */
+            max-height: 100%; /* Establece la altura máxima de la imagen */
             height: auto; /* Para mantener la proporción de la imagen */
         }
     </style>
@@ -85,15 +85,13 @@
         <a href="cursos.html">Nuestros Cursos</a> |
         <a href="contacto.html">Contacto</a>
     </div>
-<!-- Ventana emergente -->
-<div id="welcomeModal" class="modal" onclick="hideModal(event)">
-    <div class="modal-content">
-        <img src="humbertico.jpg" alt="Bienvenidos" class="modal-img">
+    <!-- Ventana emergente -->
+    <div id="welcomeModal" class="modal" onclick="hideModal(event)">
+        <div class="modal-content">
+            <img src="humbertico.jpg" alt="Bienvenidos" class="modal-img">
+        </div>
     </div>
-</div>
 
-    </div>
-</div>
     <script>
         function showModal() {
             document.getElementById('welcomeModal').style.display = "block";
@@ -101,12 +99,10 @@
 
         function hideModal(event) {
             var modal = document.getElementById('welcomeModal');
-            if (event.target == modal) {
+            if (event.target === modal) {
                 modal.style.display = "none";
             }
         }
     </script>
 </body>
 </html>
-
-
