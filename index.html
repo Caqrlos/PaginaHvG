@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Humberto velasquez garcia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humberto Velasquez Garcia</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,12 +27,6 @@
             margin: 10px;
             text-decoration: none;
         }
-        .section {
-            margin: 15px;
-            padding: 15px;
-            background-color: white;
-            border-radius: 5px;
-        }
         .social {
             position: absolute;
             top: 10px;
@@ -39,10 +34,9 @@
         }
         .social a {
             margin: 0 5px;
-            width: 20px; /* Ajusta el ancho de los iconos */
-            height: 20px; /* Ajusta la altura de los iconos */
+            width: 20px;
+            height: 20px;
         }
-        /* Estilos para la ventana emergente */
         .modal {
             display: none;
             position: fixed;
@@ -52,22 +46,21 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.4); /* Fondo translúcido */
+            background-color: rgba(0,0,0,0.4);
             padding: 10px;
         }
         .modal-content {
-            background-color: transparent; /* Fondo transparente */
+            background-color: transparent;
             margin: auto;
             padding: 20px;
-            width:50%; /* Ancho de la ventana emergente */
+            width: 80%;
             text-align: center;
-            position: relative; /* Para que podamos detectar clics fuera de la ventana emergente */
-            color: white; /* Color del texto */
+            position: relative;
+            color: white;
         }
         .modal-img {
-            max-width: 80%; /* Para que la imagen se ajuste al ancho del contenedor */
-            max-height: 80%; /* Establece la altura máxima de la imagen */
-            height: auto; /* Para mantener la proporción de la imagen */
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -75,7 +68,7 @@
     <div class="header">
         <h1>I.E.D Humberto Velasquez Garcia</h1>
         <div class="social">
-            <a href="https://www.facebook.com/iedhumberto.velasquezgarcia"><img src="fb_icon_325x325.png" alt="Facebook" style="width: 20px; height: 20px;"></a> <!-- Ajustado el tamaño del icono de Facebook -->
+            <a href="https://www.facebook.com/iedhumberto.velasquezgarcia"><img src="fb_icon_325x325.png" alt="Facebook" style="width: 20px; height: 20px;"></a>
             <a href="https://twitter.com/tuUsuario"><img src="twitter_icon.png" alt="Twitter"></a>
             <a href="https://www.instagram.com/tuUsuario"><img src="instagram_icon.png" alt="Instagram"></a>
         </div>
@@ -85,7 +78,6 @@
         <a href="cursos.html">Nuestros Cursos</a> |
         <a href="contacto.html">Contacto</a>
     </div>
-    <!-- Ventana emergente -->
     <div id="welcomeModal" class="modal" onclick="hideModal(event)">
         <div class="modal-content">
             <img src="humbertico.jpg" alt="Bienvenidos" class="modal-img">
